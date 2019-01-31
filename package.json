@@ -1,0 +1,42 @@
+{
+  "name": "@ui-model/swagger-to-gql",
+  "description": "import swagger definition to graphql files",
+  "main": "./dist/index.js",
+  "bin": {
+    "nt": "dist/bin/index.js"
+  },
+  "version": "0.2.6",
+  "author": "Zhicheng Wang<asnowwolf@gmail.com>",
+  "homepage": "https://github.com/ui-model/swagger-to-gql",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ui-model/swagger-to-gql.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ui-model/swagger-to-gql/issues"
+  },
+  "scripts": {
+    "prelink": "rm -fr dist && tsc",
+    "prepublish": "rm -fr dist && tsc"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/node": "^9.6.41",
+    "@types/swagger-parser": "^4.0.2",
+    "@types/vfile": "^3.0.2",
+    "@types/yargs": "^12.0.8",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^5.0.1",
+    "tslint": "^5.12.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "rxjs": "^6.3.3",
+    "swagger-parser": "^6.0.5",
+    "to-vfile": "^5.0.2",
+    "vfile": "^4.0.0",
+    "yargs": "^12.0.5"
+  }
+}
